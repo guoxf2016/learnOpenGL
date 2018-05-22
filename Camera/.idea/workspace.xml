@@ -35,8 +35,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="339" column="26" lean-forward="true" selection-start-line="339" selection-start-column="26" selection-end-line="339" selection-end-column="26" />
+            <state relative-caret-position="98">
+              <caret line="61" column="4" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -44,10 +44,37 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="func_trigonometric.inl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/glm/detail/func_trigonometric.inl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="type_vec3.hpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/glm/detail/type_vec3.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="88" column="53" lean-forward="true" selection-start-line="88" selection-start-column="53" selection-end-line="88" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.hpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/glm/detail/setup.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="730" column="36" lean-forward="true" selection-start-line="730" selection-start-column="36" selection-end-line="730" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="type_mat4x4.inl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/glm/detail/type_mat4x4.inl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
+            <state relative-caret-position="980">
               <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
             </state>
           </provider>
@@ -80,15 +107,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shader.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shader.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="shader.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shader.cpp">
           <provider selected="true" editor-type-id="text-editor">
@@ -98,25 +116,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="glad.h" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/local/include/glad/glad.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40488">
-              <caret line="1446" column="8" selection-start-line="1446" selection-start-column="8" selection-end-line="1446" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="glad.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/glad.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21056">
-              <caret line="752" column="4" selection-start-line="752" selection-start-column="4" selection-end-line="752" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>processInput</find>
+      <find>framebuffer_size_callback</find>
+      <find>mouse_callback</find>
+      <find>yaw</find>
+      <find>cameraFront</find>
+    </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -151,6 +160,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,12 +176,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Camera" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -218,12 +227,13 @@
       <workItem from="1526543551182" duration="10918000" />
       <workItem from="1526875375535" duration="2631000" />
       <workItem from="1526957335351" duration="1786000" />
-      <workItem from="1526961269375" duration="2226000" />
+      <workItem from="1526961269375" duration="2217000" />
+      <workItem from="1526969639777" duration="5324000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27510000" />
+    <option name="totallyTimeSpent" value="32825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -234,12 +244,12 @@
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32683983" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.3290735" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33333334" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33333334" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.399361" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -257,24 +267,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/glm/gtc/matrix_transform.inl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12040">
-          <caret line="430" column="46" selection-start-line="430" selection-start-column="46" selection-end-line="430" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/glm/gtc/quaternion.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7448">
@@ -596,15 +592,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/glm/detail/type_mat4x4.inl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
+        <state relative-caret-position="980">
           <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glm/detail/setup.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="730" column="36" lean-forward="true" selection-start-line="730" selection-start-column="36" selection-end-line="730" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glm/detail/type_vec3.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="88" column="53" lean-forward="true" selection-start-line="88" selection-start-column="53" selection-end-line="88" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glm/detail/func_trigonometric.inl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="339" column="26" lean-forward="true" selection-start-line="339" selection-start-column="26" selection-end-line="339" selection-end-column="26" />
+        <state relative-caret-position="98">
+          <caret line="61" column="4" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
