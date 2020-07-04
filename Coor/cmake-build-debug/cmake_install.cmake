@@ -1,4 +1,4 @@
-# Install script for directory: /home/guoxiaofei/CLionProjects/learnOpenGL/Coor
+# Install script for directory: /mnt/h/github/learnOpenGL/Coor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/guoxiaofei/CLionProjects/learnOpenGL/Coor/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/h/github/learnOpenGL/Coor/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

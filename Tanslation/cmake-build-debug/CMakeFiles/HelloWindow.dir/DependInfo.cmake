@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/guoxiaofei/CLionProjects/learnOpenGL/Tanslation/glad.c" "/home/guoxiaofei/CLionProjects/learnOpenGL/Tanslation/cmake-build-debug/CMakeFiles/HelloWindow.dir/glad.c.o"
+  "/mnt/h/github/learnOpenGL/Tanslation/glad.c" "/mnt/h/github/learnOpenGL/Tanslation/cmake-build-debug/CMakeFiles/HelloWindow.dir/glad.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -14,8 +14,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/guoxiaofei/local/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/guoxiaofei/CLionProjects/learnOpenGL/Tanslation/main.cpp" "/home/guoxiaofei/CLionProjects/learnOpenGL/Tanslation/cmake-build-debug/CMakeFiles/HelloWindow.dir/main.cpp.o"
-  "/home/guoxiaofei/CLionProjects/learnOpenGL/Tanslation/shader.cpp" "/home/guoxiaofei/CLionProjects/learnOpenGL/Tanslation/cmake-build-debug/CMakeFiles/HelloWindow.dir/shader.cpp.o"
+  "/mnt/h/github/learnOpenGL/Tanslation/main.cpp" "/mnt/h/github/learnOpenGL/Tanslation/cmake-build-debug/CMakeFiles/HelloWindow.dir/main.cpp.o"
+  "/mnt/h/github/learnOpenGL/Tanslation/shader.cpp" "/mnt/h/github/learnOpenGL/Tanslation/cmake-build-debug/CMakeFiles/HelloWindow.dir/shader.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

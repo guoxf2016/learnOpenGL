@@ -6,7 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/guoxiaofei/CLionProjects/learnOpenGL/Texture/main.cpp
+/mnt/h/github/learnOpenGL/Texture/SOIL/SOIL.h
+
+/mnt/h/github/learnOpenGL/Texture/main.cpp
 iostream
 -
 stdio.h
@@ -17,18 +19,18 @@ GLFW/glfw3.h
 -
 cmath
 -
-SOIL.h
--
+SOIL/SOIL.h
+/mnt/h/github/learnOpenGL/Texture/SOIL/SOIL.h
 zconf.h
 -
 cstring
 -
 
-/home/guoxiaofei/CLionProjects/learnOpenGL/Texture/shader.cpp
+/mnt/h/github/learnOpenGL/Texture/shader.cpp
 shader.h
-/home/guoxiaofei/CLionProjects/learnOpenGL/Texture/shader.h
+/mnt/h/github/learnOpenGL/Texture/shader.h
 
-/home/guoxiaofei/CLionProjects/learnOpenGL/Texture/shader.h
+/mnt/h/github/learnOpenGL/Texture/shader.h
 glad/glad.h
 -
 string
@@ -38,33 +40,5 @@ fstream
 sstream
 -
 iostream
--
-
-/home/guoxiaofei/local/include/KHR/khrplatform.h
-stdint.h
--
-inttypes.h
--
-stdint.h
--
-
-/home/guoxiaofei/local/include/glad/glad.h
-windows.h
--
-stddef.h
--
-KHR/khrplatform.h
--
-inttypes.h
--
-inttypes.h
--
-inttypes.h
--
-stdint.h
--
-stdint.h
--
-inttypes.h
 -
 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/guoxiaofei/CLionProjects/learnOpenGL/Shaders/main.cpp
+/mnt/h/github/learnOpenGL/Shaders/main.cpp
 iostream
 -
 glad/glad.h
@@ -16,31 +16,19 @@ GLFW/glfw3.h
 cmath
 -
 
-/home/guoxiaofei/local/include/KHR/khrplatform.h
-stdint.h
--
-inttypes.h
--
-stdint.h
--
+/mnt/h/github/learnOpenGL/Shaders/shader.cpp
+shader.h
+/mnt/h/github/learnOpenGL/Shaders/shader.h
 
-/home/guoxiaofei/local/include/glad/glad.h
-windows.h
+/mnt/h/github/learnOpenGL/Shaders/shader.h
+glad/glad.h
 -
-stddef.h
+string
 -
-KHR/khrplatform.h
+fstream
 -
-inttypes.h
+sstream
 -
-inttypes.h
--
-inttypes.h
--
-stdint.h
--
-stdint.h
--
-inttypes.h
+iostream
 -
 

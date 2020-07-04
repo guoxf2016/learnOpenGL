@@ -4,7 +4,7 @@
 #include <GLFW/glfw3.h>
 #include <cmath>
 
-#include <SOIL.h>
+#include "SOIL/SOIL.h"
 #include <zconf.h>
 #include <cstring>
 #include "glm/glm.hpp"
@@ -192,7 +192,7 @@ int main() {
     int texWidth, texHeight, nrChannels;
 
     //这里的文件路径是个坑，使用./container.jpg无法打开文件
-    unsigned char* data = SOIL_load_image("/home/guoxiaofei/CLionProjects/learnOpenGL/Texture/container.jpg",
+    unsigned char* data = SOIL_load_image("../container.jpg",
             &texWidth, &texHeight, 0, SOIL_LOAD_RGB);
     if (data) {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, texWidth, texHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, data);//生成纹理
@@ -211,7 +211,7 @@ int main() {
 
     int texWidth1, texHeight1, nrChannels1;
 
-    unsigned char* data1 = SOIL_load_image("/home/guoxiaofei/CLionProjects/learnOpenGL/Texture/awesomeface.png",
+    unsigned char* data1 = SOIL_load_image("../awesomeface.png",
                                           &texWidth1, &texHeight1, 0, SOIL_LOAD_RGB);
     if (data1) {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, texWidth1, texHeight1, 0, GL_RGB, GL_UNSIGNED_BYTE, data1);//生成纹理

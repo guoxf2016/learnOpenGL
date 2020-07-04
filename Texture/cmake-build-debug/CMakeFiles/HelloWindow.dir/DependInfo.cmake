@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/guoxiaofei/CLionProjects/learnOpenGL/Texture/glad.c" "/home/guoxiaofei/CLionProjects/learnOpenGL/Texture/cmake-build-debug/CMakeFiles/HelloWindow.dir/glad.c.o"
+  "/mnt/h/github/learnOpenGL/Texture/glad.c" "/mnt/h/github/learnOpenGL/Texture/cmake-build-debug/CMakeFiles/HelloWindow.dir/glad.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -14,8 +14,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/guoxiaofei/local/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/guoxiaofei/CLionProjects/learnOpenGL/Texture/main.cpp" "/home/guoxiaofei/CLionProjects/learnOpenGL/Texture/cmake-build-debug/CMakeFiles/HelloWindow.dir/main.cpp.o"
-  "/home/guoxiaofei/CLionProjects/learnOpenGL/Texture/shader.cpp" "/home/guoxiaofei/CLionProjects/learnOpenGL/Texture/cmake-build-debug/CMakeFiles/HelloWindow.dir/shader.cpp.o"
+  "/mnt/h/github/learnOpenGL/Texture/main.cpp" "/mnt/h/github/learnOpenGL/Texture/cmake-build-debug/CMakeFiles/HelloWindow.dir/main.cpp.o"
+  "/mnt/h/github/learnOpenGL/Texture/shader.cpp" "/mnt/h/github/learnOpenGL/Texture/cmake-build-debug/CMakeFiles/HelloWindow.dir/shader.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

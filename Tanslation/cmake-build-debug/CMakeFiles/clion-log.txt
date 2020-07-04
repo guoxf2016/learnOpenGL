@@ -1,6 +1,6 @@
-/home/guoxiaofei/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/guoxiaofei/CLionProjects/learnOpenGL/Tanslation
--- The C compiler identification is GNU 7.3.0
--- The CXX compiler identification is GNU 7.3.0
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /mnt/h/github/learnOpenGL/Tanslation
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
 -- Check for working C compiler: /usr/bin/cc
 -- Check for working C compiler: /usr/bin/cc -- works
 -- Detecting C compiler ABI info
@@ -18,4 +18,4 @@
 -- Found GLUT: /usr/lib/x86_64-linux-gnu/libglut.so  
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/guoxiaofei/CLionProjects/learnOpenGL/Tanslation/cmake-build-debug
+-- Build files have been written to: /mnt/h/github/learnOpenGL/Tanslation/cmake-build-debug
