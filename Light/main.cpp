@@ -11,6 +11,8 @@
 #include "glm/gtc/matrix_transform.hpp"
 #include "glm/gtc/type_ptr.hpp"
 
+#include "shader.h"
+
 using namespace glm;
 
 void framebuffer_size_callback(GLFWwindow *window, int width, int height);
@@ -210,19 +212,7 @@ int main() {
                                             "    gl_Position = projection * view * model * vec4(aPos, 1.0);\n"
                                             "}";
 
-    GLuint vertexShader;
-    vertexShader = glCreateShader(GL_VERTEX_SHADER);
-    glShaderSource(vertexShader, 1, &vertexShaderSimpleCube, nullptr);
-    glCompileShader(vertexShader);
 
-    GLint success;
-    GLchar infoLog[512];
-    glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
-
-    if (!success) {
-        glGetShaderInfoLog(vertexShader, 512, nullptr, infoLog);
-        std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
-    }
 
     GLchar const *fragmentShaderSource = "#version 330 core\n"
                                          "out vec4 FragColor;\n"
@@ -256,58 +246,9 @@ int main() {
                                               "    FragColor = vec4(1.0); // 将向量的四个分量全部设置为1.0\n"
                                               "}";
 
-    GLuint fragmentShader;
-    fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-    glShaderSource(fragmentShader, 1, &fragmentShaderSource2, nullptr);
-    glCompileShader(fragmentShader);
 
-    glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);
-
-    if (!success) {
-        glGetShaderInfoLog(fragmentShader, 512, nullptr, infoLog);
-        std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
-    }
-
-    GLuint fragmentShaderLight;
-    fragmentShaderLight = glCreateShader(GL_FRAGMENT_SHADER);
-    glShaderSource(fragmentShaderLight, 1, &fragmentShaderSourceLight, nullptr);
-    glCompileShader(fragmentShaderLight);
-
-    glGetShaderiv(fragmentShaderLight, GL_COMPILE_STATUS, &success);
-
-    if (!success) {
-        glGetShaderInfoLog(fragmentShaderLight, 512, nullptr, infoLog);
-        std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
-    }
-
-    GLuint shaderProgram;
-    shaderProgram = glCreateProgram();
-    glAttachShader(shaderProgram, vertexShader);
-    glAttachShader(shaderProgram, fragmentShader);
-    glLinkProgram(shaderProgram);
-
-    glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
-    if (!success) {
-        glGetProgramInfoLog(shaderProgram, 512, nullptr, infoLog);
-        std::cout << "ERROR::PROGRAM::LINK_FAILED\n" << infoLog << std::endl;
-    }
-
-    GLuint shaderProgramLight;
-    shaderProgramLight = glCreateProgram();
-    glAttachShader(shaderProgramLight, vertexShader);
-    glAttachShader(shaderProgramLight, fragmentShaderLight);
-    glLinkProgram(shaderProgramLight);
-
-    glGetProgramiv(shaderProgramLight, GL_LINK_STATUS, &success);
-    if (!success) {
-        glGetProgramInfoLog(shaderProgramLight, 512, nullptr, infoLog);
-        std::cout << "ERROR::PROGRAM::LINK_FAILED\n" << infoLog << std::endl;
-    }
-
-
-    glDeleteShader(vertexShader);
-    glDeleteShader(fragmentShader);
-    glDeleteShader(fragmentShaderLight);
+    Shader cubeShader = Shader(vertexShaderSimpleCube, fragmentShaderSource2, false);
+    Shader lightShader = Shader(vertexShaderSimpleCube, fragmentShaderSourceLight, false);
 
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *) 0);
     glEnableVertexAttribArray(0);
@@ -329,7 +270,7 @@ int main() {
 
     glBindVertexArray(0);
 
-    GLuint texture, texture2;
+    /*GLuint texture, texture2;
     glGenTextures(1, &texture);
     glBindTexture(GL_TEXTURE_2D, texture);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
@@ -368,14 +309,14 @@ int main() {
         std::cout << "Failed to load texture" << std::endl;
     }
     SOIL_free_image_data(data1);//释放纹理图片
-    glBindTexture(GL_TEXTURE_2D, 0);
+    glBindTexture(GL_TEXTURE_2D, 0);*/
 
-    glUseProgram(shaderProgram);
 //    glUniform1i(glGetUniformLocation(shaderProgram, "texture1"), 0);
 //    glUniform1i(glGetUniformLocation(shaderProgram, "texture2"), 1);
 
-    glUniform3f(glGetUniformLocation(shaderProgram, "objectColor"), 1.0f, 0.5f, 0.31f);
-    glUniform3f(glGetUniformLocation(shaderProgram, "lightColor"), 1.0f, 1.0f, 1.0f);
+    cubeShader.use();
+    cubeShader.setVec3("objectColor", vec3(1.0f, 0.5f, 0.31f));
+    cubeShader.setVec3("lightColor", vec3(1.0f, 1.0f, 1.0f));
 
     glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);//线框
     glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);//填充
@@ -403,8 +344,8 @@ int main() {
         lastFrame = currentFrame;
         processInput(window);
 
-//        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-        glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+//        glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);//清除深度缓冲
 
 
@@ -418,16 +359,15 @@ int main() {
         float camX = sin(glfwGetTime()) * radius;
         float camZ = cos(glfwGetTime()) * radius;
 
-        glUseProgram(shaderProgram);
+        cubeShader.use();
         glm::mat4 view1 = mat4(1.0f);
         view1 = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
 
-        GLint viewLoc = glGetUniformLocation(shaderProgram, "view");
-        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, value_ptr(view1));
+        cubeShader.setMat4("view", view1);
 
         projection = glm::perspective(glm::radians(fov), 800.0f / 600.0f, 0.1f, 100.0f);
-        GLint projectionLoc = glGetUniformLocation(shaderProgram, "projection");
-        glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, value_ptr(projection));
+
+        cubeShader.setMat4("projection", projection);
 
 
         //glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);
@@ -439,8 +379,7 @@ int main() {
 
         glm::mat4 model1 = mat4(1.0f);
         model1 = glm::translate(model1,  glm::vec3 (1.0f, 1.2f, 2.0f));
-        GLint modelLoc = glGetUniformLocation(shaderProgram, "model");
-        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, value_ptr(model1));
+        cubeShader.setMat4("model", model1);
 
         glBindVertexArray(VAO);
         //glDrawArrays(GL_TRIANGLES, 0, 3);
@@ -448,16 +387,18 @@ int main() {
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
 
-        glUseProgram(shaderProgramLight);
+        lightShader.use();
 
-        GLint viewLoc2 = glGetUniformLocation(shaderProgramLight, "view");
-        glUniformMatrix4fv(viewLoc2, 1, GL_FALSE, value_ptr(view1));
-        GLint  projectionLoc2 = glGetUniformLocation(shaderProgramLight, "projection");
-        glUniformMatrix4fv(projectionLoc2, 1, GL_FALSE, value_ptr(projection));
-        model1 = glm::translate(model1, lightPos);
-        model1 = glm::scale(model1, glm::vec3(0.2f));
-        GLint  modelLoc2 = glGetUniformLocation(shaderProgramLight, "model");
-        glUniformMatrix4fv(modelLoc2, 1, GL_FALSE, value_ptr(model1));
+        lightShader.setMat4("view", view1);
+
+        lightShader.setMat4("projection", projection);
+
+        glm::mat4 model2 = mat4(1.0f);
+        model2 = glm::translate(model2, lightPos);
+        model2 = glm::scale(model2, glm::vec3(0.2f));
+
+        lightShader.setMat4("model", model2);
+
         glBindVertexArray(lightVAO);
         glDrawArrays(GL_TRIANGLES, 0, 36);
         /*for (unsigned int i = 0; i < 10; i++) {

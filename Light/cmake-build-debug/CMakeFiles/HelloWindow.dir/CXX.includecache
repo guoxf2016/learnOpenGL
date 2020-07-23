@@ -875,6 +875,8 @@ glm/gtc/matrix_transform.hpp
 /mnt/h/github/learnOpenGL/Light/glm/gtc/matrix_transform.hpp
 glm/gtc/type_ptr.hpp
 /mnt/h/github/learnOpenGL/Light/glm/gtc/type_ptr.hpp
+shader.h
+/mnt/h/github/learnOpenGL/Light/shader.h
 
 /mnt/h/github/learnOpenGL/Light/shader.cpp
 shader.h
@@ -891,4 +893,10 @@ sstream
 -
 iostream
 -
+glm/glm.hpp
+/mnt/h/github/learnOpenGL/Light/glm/glm.hpp
+glm/gtc/matrix_transform.hpp
+/mnt/h/github/learnOpenGL/Light/glm/gtc/matrix_transform.hpp
+glm/gtc/type_ptr.hpp
+/mnt/h/github/learnOpenGL/Light/glm/gtc/type_ptr.hpp
 

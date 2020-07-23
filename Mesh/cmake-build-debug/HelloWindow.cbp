@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="HelloWindow"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\assimp-5.0\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="HelloWindow">
+				<Option output="/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/HelloWindow" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/guoxiaofei/local/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/Makefile&quot;  VERBOSE=1 HelloWindow"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="HelloWindow/fast">
+				<Option output="/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/HelloWindow" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/guoxiaofei/local/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/Makefile&quot;  VERBOSE=1 HelloWindow/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/mnt/h/github/learnOpenGL/Mesh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/h/github/learnOpenGL/Mesh/Model.cpp">
+			<Option target="HelloWindow"/>
+		</Unit>
+		<Unit filename="/mnt/h/github/learnOpenGL/Mesh/Model.h">
+			<Option target="HelloWindow"/>
+		</Unit>
+		<Unit filename="/mnt/h/github/learnOpenGL/Mesh/glad.c">
+			<Option target="HelloWindow"/>
+		</Unit>
+		<Unit filename="/mnt/h/github/learnOpenGL/Mesh/main.cpp">
+			<Option target="HelloWindow"/>
+		</Unit>
+		<Unit filename="/mnt/h/github/learnOpenGL/Mesh/mesh.cpp">
+			<Option target="HelloWindow"/>
+		</Unit>
+		<Unit filename="/mnt/h/github/learnOpenGL/Mesh/mesh.h">
+			<Option target="HelloWindow"/>
+		</Unit>
+		<Unit filename="/mnt/h/github/learnOpenGL/Mesh/shader.cpp">
+			<Option target="HelloWindow"/>
+		</Unit>
+		<Unit filename="/mnt/h/github/learnOpenGL/Mesh/shader.h">
+			<Option target="HelloWindow"/>
+		</Unit>
+		<Unit filename="/mnt/h/github/learnOpenGL/Mesh/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/mnt/h/github/learnOpenGL/Mesh/../../../../../usr/local/lib/cmake/assimp-5.0/assimp-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\assimp-5.0\"/>
+		</Unit>
+		<Unit filename="/mnt/h/github/learnOpenGL/Mesh/../../../../../usr/local/lib/cmake/assimp-5.0/assimp-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\assimp-5.0\"/>
+		</Unit>
+		<Unit filename="/mnt/h/github/learnOpenGL/Mesh/../../../../../usr/local/lib/cmake/assimp-5.0/assimpTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\assimp-5.0\"/>
+		</Unit>
+		<Unit filename="/mnt/h/github/learnOpenGL/Mesh/../../../../../usr/local/lib/cmake/assimp-5.0/assimpTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\assimp-5.0\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

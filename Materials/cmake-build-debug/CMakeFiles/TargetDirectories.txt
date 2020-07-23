@@ -1,0 +1,3 @@
+/mnt/h/github/learnOpenGL/Materials/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/h/github/learnOpenGL/Materials/cmake-build-debug/CMakeFiles/HelloWindow.dir
+/mnt/h/github/learnOpenGL/Materials/cmake-build-debug/CMakeFiles/edit_cache.dir
